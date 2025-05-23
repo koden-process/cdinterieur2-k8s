@@ -13,7 +13,6 @@ spec:
   tls:
     - hosts:
         - {{ .Values.HostName }}
-        - www.{{ .Values.HostName }}
       secretName: {{ .Values.AppName }}-tls
   rules:
     - host: {{ .Values.HostName }}
