@@ -26,13 +26,3 @@ spec:
                 name: {{ .Values.AppName }}-service
                 port:
                   number: 80
-    - host: www.{{ .Values.HostName }}
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: {{ .Values.AppName }}-service
-                port:
-                  number: 80
